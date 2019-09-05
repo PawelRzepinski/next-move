@@ -1,0 +1,72 @@
+.button__big {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-15;
+    font-weight: bold;
+    padding: .5rem;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    border: 1px solid $dark-grey;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.button__small {
+    display: block;
+    border: 2px solid $light-green;
+    background-color: #fff;
+    color: $light-green;
+    padding: 1.250rem 3.750rem;
+    text-transform: uppercase;
+    font-size: $font-14;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $light-green;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.big--green {
+    background-color: $light-green;
+
+    &:hover {
+        color: $light-green;
+        background-color: #fff;
+    }
+}
+
+.big--white {
+    background-color: white;
+    color: $light-green;
+
+    &:hover{
+        background-color: $light-green;
+        color: #fff;
+    }
+}
+
+.big--dark {
+    background-color: $black;
+    border: 2px solid $black;
+    color: #fff!important;
+
+    &:hover {
+        color: $black!important;
+        background-color: #fff;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .button__big {
+        width: 60%;
+        padding: 1rem;
+    }
+}

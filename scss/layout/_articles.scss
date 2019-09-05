@@ -1,0 +1,17 @@
+.articles {
+    margin-bottom: 7.500rem;
+
+    .articles__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .articles{
+        .articles__content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

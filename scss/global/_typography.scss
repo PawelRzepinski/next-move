@@ -1,0 +1,33 @@
+body {
+  font-family: 'Poppins', sans-serif!important;
+}
+
+h1 {
+    font-size: $font-60!important;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+p {
+  font-size: $font-15;
+  line-height: 1.4;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  h1 {
+    font-size: 3.750rem!important;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  h1 {
+    font-size: $font-35!important;
+  }
+}

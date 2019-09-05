@@ -1,0 +1,103 @@
+.banner {
+    position: relative;
+    background-image: url("../../img/h2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+
+    .banner__content {
+        width: 100%;
+        h1 {
+            text-align: center;
+        }
+        .content__buttons {
+            margin-top: 1.875rem;
+        }
+    }
+
+    .banner__labels {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .label {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            color: $light-green;
+            text-transform: uppercase;
+            padding: 1rem;
+            cursor: pointer;
+            width: 3.125rem;
+
+            span{
+                font-size: $font-15;
+                text-indent: -180px;
+                opacity: 0;
+            }
+
+            i {
+                font-size: $font-20;
+            }
+
+            &:hover {
+                width: 18rem;
+                    span{
+                        text-indent: 0;
+                        opacity: 1;
+                    }
+                
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .banner {
+        height: 63.125rem;
+        padding: 1.875rem;
+
+        .banner__content {
+            width: 80%;
+            margin-left: auto;
+            text-align: end;
+
+            h1{
+                text-align: end;
+            }
+
+            .content__buttons{
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                margin-left: auto;
+
+                .big--white {
+                    margin-left: 2rem;
+                }
+            }
+        }
+
+        .banner__labels {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .banner{
+        padding-right: 13.438rem;
+
+        .banner__content{
+            padding-left: 4.375rem;
+        }
+    }
+}

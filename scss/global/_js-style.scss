@@ -1,0 +1,24 @@
+.navigation--active {
+    transform: translateX(0)!important;
+}
+
+.up--move{
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.middle--move {
+    display: none!important;
+}
+
+.bottom--move {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.burger--position {
+    right: 1.5rem!important;
+    background-color: white!important;
+}
